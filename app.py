@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://postgres:password@localhost:5432/project"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://postgres:password@localhost:5432/postgres"
 db = SQLAlchemy(app)
 
 class BlogPost(db.Model):
